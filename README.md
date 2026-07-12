@@ -1,7 +1,5 @@
 # Meryem Güçlü - Personal Portfolio
 
-![Portfolio Mockup](wwwroot/images/portfolio_mockup.png)
-
 Kişisel portföy web sitem. Bu proje, yeteneklerimi, projelerimi, eğitim ve deneyim geçmişimi sergilemek amacıyla **ASP.NET Core MVC** altyapısı ile baştan aşağı yenilenmiş ve **Entity Framework Core** ile güçlendirilmiştir.
 
 ## Açıklama
