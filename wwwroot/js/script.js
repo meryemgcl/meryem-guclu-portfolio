@@ -219,9 +219,12 @@ async function handleFormSubmit(event) {
   const formData = new FormData(form);
   
   try {
-    const response = await fetch('/Home/SendMessage', {
+    const response = await fetch('https://formsubmit.co/ajax/meriguclu123@gmail.com', {
       method: 'POST',
-      body: formData
+      body: formData,
+      headers: {
+        'Accept': 'application/json'
+      }
     });
     
     if (response.ok) {
