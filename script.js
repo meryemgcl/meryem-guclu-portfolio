@@ -21,9 +21,9 @@ function initCodeCanvas() {
   let drops = Array(columns).fill(1);
 
   function draw() {
-    ctx.fillStyle = 'rgba(12, 21, 25, 0.05)';
+    ctx.fillStyle = 'rgba(5, 11, 20, 0.05)';
     ctx.fillRect(0, 0, canvas.width, canvas.height);
-    ctx.fillStyle = '#CF9D7B';
+    ctx.fillStyle = '#06B6D4';
     ctx.font = `${fontSize}px monospace`;
 
     for (let i = 0; i < drops.length; i++) {

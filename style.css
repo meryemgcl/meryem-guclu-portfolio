@@ -8,19 +8,19 @@
 
 /* ---- CSS Variables ---- */
 :root {
-  --midnight:    #0C1519; /* Chinese Black */
-  --leather:     #724B39; /* Coffee */
-  --parchment:   #CF9D7B; /* Antique Brass */
-  --mist:        #A3968F; /* Lighter mist matching the warm tones */
-  --espresso:    #162127; /* Dark Jungle Green */
-  --white:       #F5EFE6;
-  --white-dim:   rgba(245, 239, 230, 0.75);
-  --accent:      #CF9D7B;
-  --accent-dim:  rgba(207, 157, 123, 0.15);
-  --leather-dim: rgba(114, 75, 57, 0.15);
-  --card-bg:     rgba(58, 53, 52, 0.55); /* Jet */
-  --card-border: rgba(207, 157, 123, 0.18);
-  --glass:       rgba(12, 21, 25, 0.7); /* Chinese Black with transparency */
+  --midnight:    #050B14; /* Deepest Navy/Black */
+  --leather:     #0E7490; /* Deep Cyan */
+  --parchment:   #22D3EE; /* Bright Neon Cyan */
+  --mist:        #94A3B8; /* Slate Blue/Gray */
+  --espresso:    #0B1320; /* Dark Navy Background */
+  --white:       #F1F5F9; /* Off-white Slate */
+  --white-dim:   rgba(241, 245, 249, 0.75);
+  --accent:      #06B6D4; /* Vibrant Cyan */
+  --accent-dim:  rgba(6, 182, 212, 0.15);
+  --leather-dim: rgba(14, 116, 144, 0.15);
+  --card-bg:     rgba(15, 23, 42, 0.65); /* Glass Slate */
+  --card-border: rgba(34, 211, 238, 0.2);
+  --glass:       rgba(5, 11, 20, 0.8); /* Deep Navy Glass */
 
   --font-serif: 'Playfair Display', Georgia, serif;
   --font-sans:  'Inter', -apple-system, sans-serif;
@@ -200,7 +200,7 @@ button { cursor: pointer; border: none; background: none; }
   content: '';
   position: absolute;
   inset: 0;
-  background: rgba(42, 27, 21, 0.78);
+  background: rgba(5, 11, 20, 0.82);
   z-index: 0;
 }
 
@@ -1067,9 +1067,9 @@ button { cursor: pointer; border: none; background: none; }
 }
 
 .contact-item:hover {
-  border-color: rgba(205, 181, 142, 0.4);
+  border-color: rgba(34, 211, 238, 0.5);
   transform: translateX(4px);
-  background: rgba(96, 58, 42, 0.2);
+  background: rgba(14, 116, 144, 0.2);
 }
 
 .contact-item-icon { font-size: 1.3rem; }
@@ -1139,8 +1139,8 @@ button { cursor: pointer; border: none; background: none; }
 
 .form-success {
   padding: 1rem;
-  background: rgba(96, 58, 42, 0.3);
-  border: 1px solid rgba(205, 181, 142, 0.3);
+  background: rgba(14, 116, 144, 0.3);
+  border: 1px solid rgba(34, 211, 238, 0.3);
   border-radius: var(--radius-sm);
   color: var(--parchment);
   font-size: 0.9rem;
