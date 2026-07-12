@@ -198,18 +198,15 @@ filterBtns.forEach(btn => {
   });
 });
 
-let formSubmitted = false;
-
 // ---- Contact form handler ----
-function handleFormSubmit() {
-  formSubmitted = true;
+async function handleFormSubmit(event) {
+  event.preventDefault();
+  const form = document.getElementById('contact-form');
+  const success = document.getElementById('form-success');
+  const errorMsg = document.getElementById('form-error');
   const btn = document.getElementById('btn-send');
   const btnText = document.getElementById('btn-send-text');
   
-  if (btnText) btnText.textContent = 'Gönderiliyor...';
-  else btn.textContent = 'Gönderiliyor...';
-  
-  btn.disabled = true;
   if (!form || !success || !btn) return;
   
   const originalText = btnText.innerText;
