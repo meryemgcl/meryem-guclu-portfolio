@@ -1,0 +1,662 @@
+@{
+    ViewData["Title"] = "Ana Sayfa";
+}
+  <!-- Hero Section -->
+  <section class="hero" id="hero">
+    <!-- Animated code rain canvas -->
+    <canvas id="hero-canvas" class="hero-canvas"></canvas>
+    <div class="hero-bg-shapes">
+      <div class="shape shape-1"></div>
+      <div class="shape shape-2"></div>
+      <div class="shape shape-3"></div>
+    </div>
+    <div class="hero-content">
+      <div class="hero-avatar-wrapper">
+        <div class="hero-avatar">
+          <img src="https://avatars.githubusercontent.com/u/153759244?v=4" alt="Meryem Güçlü" id="hero-avatar-img" />
+          <div class="avatar-ring"></div>
+        </div>
+      </div>
+      <div class="hero-text">
+        <p class="hero-greeting" id="hero-greeting">Merhaba, ben</p>
+        <h1 class="hero-name" id="hero-name">Meryem Güçlü</h1>
+        <div class="hero-title-wrapper">
+          <span class="hero-title" id="hero-title-text">Software Developer</span>
+          <span class="hero-title-cursor">|</span>
+        </div>
+        <p class="hero-description" id="hero-description">
+          Veri bilimi, yapay zeka ve yazılım geliştirme alanlarında tutkuyla çalışan;
+          web, mobil ve masaüstü uygulamalar geliştiren bir yazılımcıyım.
+        </p>
+        <div class="hero-cta" id="hero-cta">
+          <a href="#projects" class="btn btn-primary" id="btn-projects-hero">Projelerimi Gör</a>
+          <a href="#contact" class="btn btn-outline" id="btn-contact-hero">İletişime Geç</a>
+          <a href="MeryemGuclu_CV.pdf" download class="btn btn-cv" id="btn-cv-hero">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16" style="margin-right:6px"><path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/></svg>
+            CV İndir
+          </a>
+        </div>
+        <div class="hero-socials" id="hero-socials">
+          <a href="https://github.com/meryemgcl" target="_blank" rel="noopener" id="social-github" aria-label="GitHub" class="social-link">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+          </a>
+          <a href="https://www.linkedin.com/in/meryemgüçlü" target="_blank" rel="noopener" id="social-linkedin" aria-label="LinkedIn" class="social-link">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          </a>
+          <a href="https://medium.com/@@meriguclu" target="_blank" rel="noopener" id="social-medium" aria-label="Medium" class="social-link">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M13.54 12a6.8 6.8 0 01-6.77 6.82A6.8 6.8 0 010 12a6.8 6.8 0 016.77-6.82A6.8 6.8 0 0113.54 12zM20.96 12c0 3.54-1.51 6.42-3.38 6.42-1.87 0-3.39-2.88-3.39-6.42s1.52-6.42 3.39-6.42 3.38 2.88 3.38 6.42M24 12c0 3.17-.53 5.75-1.19 5.75-.66 0-1.19-2.58-1.19-5.75s.53-5.75 1.19-5.75C23.47 6.25 24 8.83 24 12z"/></svg>
+          </a>
+          <a href="mailto:meriguclu123@@gmail.com" id="social-email" aria-label="E-posta" class="social-link">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="scroll-indicator" id="scroll-indicator">
+      <div class="scroll-dot"></div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="section about-section" id="about">
+    <!-- Animated code background canvas -->
+    <canvas id="code-canvas" class="code-bg-canvas"></canvas>
+    <div class="container" style="position:relative;z-index:1">
+      <div class="section-header">
+        <span class="section-tag">Tanışalım</span>
+        <h2 class="section-title">Hakkımda</h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="about-grid">
+        <div class="about-image-col">
+          <div class="about-img-frame" id="about-img-frame">
+            <img src="https://avatars.githubusercontent.com/u/153759244?v=4" alt="Meryem Güçlü" id="about-avatar" />
+            <div class="about-img-decoration"></div>
+          </div>
+
+        </div>
+        <div class="about-text-col">
+          <h3 class="about-subtitle" id="about-subtitle">Software Developer & Data Enthusiast</h3>
+          <p class="about-bio" id="about-bio">
+            Atatürk Üniversitesi Bilgisayar Programcılığı bölümü mezunuyum. Yazılım geliştirme, 
+            veri bilimi ve yapay zeka konularına derin ilgi duyuyorum. Web, mobil ve masaüstü 
+            uygulamalar geliştirmenin yanı sıra makine öğrenmesi ve otomasyon alanlarında da 
+            projeler üretiyorum.
+          </p>
+          <p class="about-bio" id="about-bio-2">
+            ASP.NET Core MVC, Entity Framework Core ve MSSQL ile kurumsal web uygulamaları geliştirmenin yanı sıra 
+            veri analizi, yapay zeka ve otomasyon konularında kendimi sürekli geliştiriyorum.
+            Teknoloji ile insanların hayatını kolaylaştıran çözümler üretmek benim için en büyük motivasyon kaynağı.
+          </p>
+          <div class="about-info-grid" id="about-info">
+            <div class="info-item">
+              <span class="info-label">📍 Konum</span>
+              <span class="info-value">Türkiye</span>
+            </div>
+
+            <div class="info-item">
+              <span class="info-label">📧 E-posta</span>
+              <span class="info-value">meriguclu123@@gmail.com</span>
+            </div>
+            <div class="info-item">
+              <span class="info-label">📝 Blog</span>
+              <span class="info-value">medium.com/@@meriguclu</span>
+            </div>
+          </div>
+          <div style="display:flex;gap:1rem;flex-wrap:wrap">
+            <a href="MeryemGuclu_CV.pdf" download class="btn btn-cv" id="btn-cv-about2">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16" style="margin-right:6px"><path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/></svg>
+              CV İndir
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section class="section section-alt" id="skills">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Uzmanlık Alanlarım</span>
+        <h2 class="section-title">Yetenekler</h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="skills-grid" id="skills-grid">
+
+        <div class="skill-category" id="skill-cat-langs">
+          <div class="skill-cat-header">
+            <div class="skill-cat-icon">💻</div>
+            <h3>Programlama Dilleri</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag skill-primary" id="skill-python">Python</span>
+            <span class="skill-tag skill-primary" id="skill-js">JavaScript</span>
+            <span class="skill-tag skill-secondary" id="skill-csharp">C#</span>
+            <span class="skill-tag skill-secondary" id="skill-html">HTML</span>
+            <span class="skill-tag skill-secondary" id="skill-css">CSS</span>
+            <span class="skill-tag skill-secondary" id="skill-php">PHP</span>
+          </div>
+        </div>
+
+        <div class="skill-category" id="skill-cat-data">
+          <div class="skill-cat-header">
+            <div class="skill-cat-icon">📊</div>
+            <h3>Veri & Yapay Zeka</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag skill-primary" id="skill-pandas">Pandas</span>
+            <span class="skill-tag skill-primary" id="skill-numpy">NumPy</span>
+            <span class="skill-tag skill-secondary" id="skill-sklearn">Scikit-learn</span>
+            <span class="skill-tag skill-secondary" id="skill-jupyter">Jupyter Notebook</span>
+            <span class="skill-tag skill-secondary" id="skill-opencv">OpenCV</span>
+            <span class="skill-tag skill-secondary" id="skill-matplotlib">Matplotlib</span>
+          </div>
+        </div>
+
+        <div class="skill-category" id="skill-cat-web">
+          <div class="skill-cat-header">
+            <div class="skill-cat-icon">🌐</div>
+            <h3>Web & Framework</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag skill-primary" id="skill-aspnet">ASP.NET Core MVC</span>
+            <span class="skill-tag skill-primary" id="skill-webdev">Web Development</span>
+            <span class="skill-tag skill-secondary" id="skill-tailwind">TailwindCSS</span>
+            <span class="skill-tag skill-secondary" id="skill-api">REST API</span>
+            <span class="skill-tag skill-secondary" id="skill-flask">Flask</span>
+            <span class="skill-tag skill-secondary" id="skill-arduino">Arduino</span>
+            <span class="skill-tag skill-secondary" id="skill-automation">Otomasyon</span>
+          </div>
+        </div>
+
+        <div class="skill-category" id="skill-cat-db">
+          <div class="skill-cat-header">
+            <div class="skill-cat-icon">🗄️</div>
+            <h3>Veritabanı & ORM</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag skill-primary" id="skill-mssql">MSSQL</span>
+            <span class="skill-tag skill-primary" id="skill-efcore">Entity Framework Core</span>
+            <span class="skill-tag skill-secondary" id="skill-sql">SQL</span>
+            <span class="skill-tag skill-secondary" id="skill-linq">LINQ</span>
+          </div>
+        </div>
+
+        <div class="skill-category" id="skill-cat-tools">
+          <div class="skill-cat-header">
+            <div class="skill-cat-icon">🛠️</div>
+            <h3>Araçlar & Teknolojiler</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag skill-primary" id="skill-git">Git & GitHub</span>
+            <span class="skill-tag skill-secondary" id="skill-vscode">VS Code</span>
+            <span class="skill-tag skill-secondary" id="skill-testing">Software Testing</span>
+            <span class="skill-tag skill-secondary" id="skill-agile">Agile</span>
+            <span class="skill-tag skill-secondary" id="skill-visualstudio">Visual Studio</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section class="section" id="projects">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Neler Yaptım?</span>
+        <h2 class="section-title">Projeler</h2>
+        <div class="section-line"></div>
+      </div>
+
+      <div class="projects-filter" id="projects-filter">
+        <button class="filter-btn active" data-filter="all" id="filter-all">Tümü</button>
+        <button class="filter-btn" data-filter="python" id="filter-python">Python</button>
+        <button class="filter-btn" data-filter="web" id="filter-web">Web</button>
+        <button class="filter-btn" data-filter="data" id="filter-data">Veri & AI</button>
+        <button class="filter-btn" data-filter="csharp" id="filter-csharp">C#</button>
+      </div>
+
+      <div class="projects-grid" id="projects-grid">
+
+        <div class="project-card" data-category="data" id="proj-atolye">
+          <div class="project-card-header">
+            <div class="project-icon">📊</div>
+            <div class="project-links">
+              <a href="https://github.com/meryemgcl/atolye_sonu_projesi" target="_blank" id="proj-atolye-link" aria-label="GitHub" class="project-link-icon">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+              </a>
+            </div>
+          </div>
+          <h3 class="project-title">Atölye Sonu Projesi</h3>
+          <p class="project-desc">Jupyter Notebook ile gerçekleştirilen veri analizi ve makine öğrenmesi projesi. Veri temizleme, görselleştirme ve model geliştirme aşamalarını içeriyor.</p>
+          <div class="project-tags">
+            <span class="ptag">Python</span>
+            <span class="ptag">Jupyter</span>
+            <span class="ptag">Data Science</span>
+            <span class="ptag">ML</span>
+          </div>
+        </div>
+
+        <div class="project-card" data-category="python" id="proj-pazarlama">
+          <div class="project-card-header">
+            <div class="project-icon">🚀</div>
+            <div class="project-links">
+              <a href="https://github.com/meryemgcl/pazarlama-maratonu-api" target="_blank" id="proj-pazarlama-link" aria-label="GitHub" class="project-link-icon">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+              </a>
+            </div>
+          </div>
+          <h3 class="project-title">Pazarlama Maratonu API</h3>
+          <p class="project-desc">Python ile geliştirilmiş pazarlama verilerini işleyen REST API projesi. Veri analizi ve raporlama özellikleri içeriyor.</p>
+          <div class="project-tags">
+            <span class="ptag">Python</span>
+            <span class="ptag">REST API</span>
+            <span class="ptag">Marketing</span>
+          </div>
+        </div>
+
+        <div class="project-card" data-category="csharp" id="proj-eczane">
+          <div class="project-card-header">
+            <div class="project-icon">💊</div>
+            <div class="project-links">
+              <a href="https://github.com/meryemgcl/eczane-otomasyonu" target="_blank" id="proj-eczane-link" aria-label="GitHub" class="project-link-icon">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+              </a>
+            </div>
+          </div>
+          <h3 class="project-title">Eczane Otomasyonu</h3>
+          <p class="project-desc">C# ile geliştirilen eczane yönetim sistemi. İlaç takibi, stok yönetimi ve hasta kayıt sistemini kapsayan masaüstü otomasyon uygulaması.</p>
+          <div class="project-tags">
+            <span class="ptag">C#</span>
+            <span class="ptag">Desktop App</span>
+            <span class="ptag">Otomasyon</span>
+          </div>
+        </div>
+
+        <div class="project-card" data-category="web" id="proj-film">
+          <div class="project-card-header">
+            <div class="project-icon">🎬</div>
+            <div class="project-links">
+              <a href="https://github.com/meryemgcl/Film-Sitesi" target="_blank" id="proj-film-link" aria-label="GitHub" class="project-link-icon">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+              </a>
+            </div>
+          </div>
+          <h3 class="project-title">Film Sitesi</h3>
+          <p class="project-desc">JavaScript ile geliştirilmiş film arama ve listeleme web uygulaması. Film veritabanı entegrasyonu, arama filtreleri ve dinamik arayüz içeriyor.</p>
+          <div class="project-tags">
+            <span class="ptag">JavaScript</span>
+            <span class="ptag">HTML</span>
+            <span class="ptag">CSS</span>
+            <span class="ptag">Web App</span>
+          </div>
+        </div>
+
+        <div class="project-card" data-category="web" id="proj-agrohydro">
+          <div class="project-card-header">
+            <div class="project-icon">🌱</div>
+            <div class="project-links">
+              <a href="https://github.com/meryemgcl/agrohydro-projesi" target="_blank" id="proj-agrohydro-link" aria-label="GitHub" class="project-link-icon">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+              </a>
+            </div>
+          </div>
+          <h3 class="project-title">AgroHydro Projesi</h3>
+          <p class="project-desc">Tarım ve sulama sistemleri için geliştirilmiş web tabanlı izleme uygulaması. HTML ve modern web teknolojileri kullanılarak yapılandırılmıştır.</p>
+          <div class="project-tags">
+            <span class="ptag">HTML</span>
+            <span class="ptag">Web</span>
+            <span class="ptag">IoT</span>
+          </div>
+        </div>
+
+        <div class="project-card" data-category="python" id="proj-tts">
+          <div class="project-card-header">
+            <div class="project-icon">🔊</div>
+            <div class="project-links">
+              <a href="https://github.com/meryemgcl/python-text-to-speech" target="_blank" id="proj-tts-link" aria-label="GitHub" class="project-link-icon">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+              </a>
+            </div>
+          </div>
+          <h3 class="project-title">Python Text-to-Speech</h3>
+          <p class="project-desc">Python kullanarak metin-sesten ses sentezi yapan uygulama. Ses işleme kütüphaneleri ile entegre çalışan, erişilebilirlik odaklı proje.</p>
+          <div class="project-tags">
+            <span class="ptag">Python</span>
+            <span class="ptag">TTS</span>
+            <span class="ptag">Ses İşleme</span>
+          </div>
+        </div>
+
+        <div class="project-card" data-category="python" id="proj-opencv">
+          <div class="project-card-header">
+            <div class="project-icon">🎨</div>
+            <div class="project-links">
+              <a href="https://github.com/meryemgcl/Opencv-Arduino-Color-Detection" target="_blank" id="proj-opencv-link" aria-label="GitHub" class="project-link-icon">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+              </a>
+            </div>
+          </div>
+          <h3 class="project-title">OpenCV & Arduino Renk Tespiti</h3>
+          <p class="project-desc">Python + OpenCV kullanarak gerçek zamanlı renk tespiti ve Arduino entegrasyonu. Görüntü işleme ile donanım kontrolünü bir araya getiren proje.</p>
+          <div class="project-tags">
+            <span class="ptag">Python</span>
+            <span class="ptag">OpenCV</span>
+            <span class="ptag">Arduino</span>
+            <span class="ptag">IoT</span>
+          </div>
+        </div>
+
+        <div class="project-card" data-category="web" id="proj-teknomat">
+          <div class="project-card-header">
+            <div class="project-icon">🏢</div>
+            <div class="project-links">
+              <a href="https://github.com/meryemgcl/teknomat-staj-projesi" target="_blank" id="proj-teknomat-link" aria-label="GitHub" class="project-link-icon">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+              </a>
+            </div>
+          </div>
+          <h3 class="project-title">Teknomat Staj Projesi</h3>
+          <p class="project-desc">Staj sürecinde geliştirilen JavaScript tabanlı web projesi. Kullanıcı arayüzü geliştirme ve front-end programlama deneyimi kazanıldı.</p>
+          <div class="project-tags">
+            <span class="ptag">JavaScript</span>
+            <span class="ptag">HTML</span>
+            <span class="ptag">Staj</span>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="projects-footer" id="projects-footer">
+        <a href="https://github.com/meryemgcl?tab=repositories" target="_blank" class="btn btn-outline" id="btn-all-repos">Tüm Projeleri Gör (22) →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience Section -->
+  <section class="section section-alt" id="experience">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Kariyer Yolculuğum</span>
+        <h2 class="section-title">Deneyim</h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="timeline" id="timeline">
+
+        <!-- LinkedIn bilgileriniz buraya eklenecek. Lütfen deneyimlerinizi LinkedIn'den kontrol edin. -->
+        <div class="timeline-item" id="exp-1">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <h3>Yazılım Geliştirici (Stajyer)</h3>
+              <span class="timeline-company">Teknomat</span>
+            </div>
+            <span class="timeline-date">Staj Dönemi · Erzurum, Türkiye</span>
+            <p class="timeline-desc">
+              Şirketin yazılım geliştirme süreçlerine aktif katılım sağladım. JavaScript ve web teknolojileri 
+              kullanarak kullanıcı arayüzü bileşenleri geliştirdim. Gerçek proje ortamında ekip çalışması 
+              deneyimi kazandım.
+            </p>
+            <div class="timeline-tags">
+              <span class="ptag">JavaScript</span>
+              <span class="ptag">HTML/CSS</span>
+              <span class="ptag">Web Dev</span>
+              <span class="ptag">Staj</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item" id="exp-2">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <h3>Yazılım Geliştirici (Proje)</h3>
+              <span class="timeline-company">AgroHydro</span>
+            </div>
+            <span class="timeline-date">2025 · Tarımsal Teknoloji Projesi</span>
+            <p class="timeline-desc">
+              Tarım ve sulama sistemleri için web tabanlı izleme ve kontrol paneli geliştirdim. 
+              HTML, CSS ve JavaScript teknolojileri ile dinamik veri görselleştirme bileşenleri oluşturdum.
+            </p>
+            <div class="timeline-tags">
+              <span class="ptag">HTML</span>
+              <span class="ptag">CSS</span>
+              <span class="ptag">JavaScript</span>
+              <span class="ptag">IoT</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item" id="exp-3">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <h3>C# & ASP.NET Geliştirici</h3>
+              <span class="timeline-company">Eczane Otomasyon Projesi</span>
+            </div>
+            <span class="timeline-date">2025 · Desktop & Web Uygulama</span>
+            <p class="timeline-desc">
+              C# ile masaüstü eczane yönetim sistemi geliştirdim. İlaç takibi, stok yönetimi ve hasta kayıt modülleri 
+              tasarlandı. ASP.NET Core MVC, Entity Framework Core ve MSSQL veritabanı entegrasyonu üzerine 
+              kapsamlı çalışmalar yürütüldü.
+            </p>
+            <div class="timeline-tags">
+              <span class="ptag">C#</span>
+              <span class="ptag">ASP.NET Core MVC</span>
+              <span class="ptag">Entity Framework Core</span>
+              <span class="ptag">MSSQL</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item" id="exp-4">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <h3>Python Developer & Data Analyst</h3>
+              <span class="timeline-company">Pazarlama Maratonu / Bağımsız</span>
+            </div>
+            <span class="timeline-date">2025 · Pazarlama & Veri Analizi</span>
+            <p class="timeline-desc">
+              Python ile pazarlama verilerini işleyen REST API projesi geliştirdim. Veri temizleme, 
+              analiz ve raporlama süreçlerini otomatize ettim. Pandas, NumPy ve Scikit-learn 
+              kütüphaneleri ile makine öğrenmesi modelleri oluşturuldu.
+            </p>
+            <div class="timeline-tags">
+              <span class="ptag">Python</span>
+              <span class="ptag">Pandas</span>
+              <span class="ptag">REST API</span>
+              <span class="ptag">Data Analysis</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item" id="exp-5">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <h3>Veri Bilimi Katılımcısı</h3>
+              <span class="timeline-company">Atölye / Bootcamp</span>
+            </div>
+            <span class="timeline-date">2025 · Veri Bilimi Eğitimi</span>
+            <p class="timeline-desc">
+              Veri bilimi atölyesinde kapsamlı projeyi tamamladım. Jupyter Notebook ile gerçek veri setleri 
+              üzerinde keşifsel veri analizi, özellik mühendisliği ve makine öğrenmesi modeli geliştirme 
+              aşamalarını başarıyla uyguladım.
+            </p>
+            <div class="timeline-tags">
+              <span class="ptag">Python</span>
+              <span class="ptag">Jupyter</span>
+              <span class="ptag">Machine Learning</span>
+              <span class="ptag">Data Science</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item" id="exp-6">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <h3>Görüntü İşleme Araştırmacısı</h3>
+              <span class="timeline-company">OpenCV & Arduino Projesi</span>
+            </div>
+            <span class="timeline-date">2025 · Gömülü Sistem & Görüntü İşleme</span>
+            <p class="timeline-desc">
+              Python ve OpenCV kullanarak gerçek zamanlı renk tespiti sistemi tasarladım. 
+              Arduino entegrasyonu ile donanım kontrolü sağlandı. Görüntü işleme algoritmaları 
+              ve gömülü sistem programlaması konularında deneyim kazandım.
+            </p>
+            <div class="timeline-tags">
+              <span class="ptag">Python</span>
+              <span class="ptag">OpenCV</span>
+              <span class="ptag">Arduino</span>
+              <span class="ptag">Görüntü İşleme</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div style="text-align:center;margin-top:1rem">
+        <p style="color:var(--mist);font-size:0.85rem">💡 LinkedIn profilimde daha fazla detay bulabilirsiniz →
+          <a href="https://www.linkedin.com/in/meryemgüçlü" target="_blank" style="color:var(--parchment);text-decoration:underline">linkedin.com/in/meryemgüçlü</a>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Education Section -->
+  <section class="section" id="education">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Akademik Geçmiş</span>
+        <h2 class="section-title">Eğitim</h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="education-grid" id="education-grid">
+
+        <div class="edu-card" id="edu-sivas">
+          <div class="edu-icon">🎓</div>
+          <div class="edu-content">
+            <h3>Bilişim Sistemleri ve Teknolojileri</h3>
+            <span class="edu-school">Sivas Cumhuriyet Üniversitesi</span>
+            <span class="edu-year">3. Sınıf (Başlangıç: 2025)</span>
+            <p class="edu-desc">Bilişim sistemleri, yazılım mühendisliği ve bilgi teknolojileri alanlarında akademik eğitime devam ediyorum.</p>
+          </div>
+        </div>
+
+        <div class="edu-card" id="edu-atauni">
+          <div class="edu-icon">🎓</div>
+          <div class="edu-content">
+            <h3>Bilgisayar Programcılığı</h3>
+            <span class="edu-school">Atatürk Üniversitesi</span>
+            <span class="edu-year">Mezun</span>
+            <p class="edu-desc">Yazılım geliştirme, veri yapıları, algoritmalar ve uygulama programlama üzerine kapsamlı eğitim aldım.</p>
+          </div>
+        </div>
+
+        <div class="edu-card" id="edu-datascience">
+          <div class="edu-icon">📊</div>
+          <div class="edu-content">
+            <h3>Veri Bilimi & Makine Öğrenmesi</h3>
+            <span class="edu-school">Online Eğitimler & Bootcamp</span>
+            <span class="edu-year">Devam Ediyor</span>
+            <p class="edu-desc">Yapay zeka, makine öğrenmesi ve veri analizi alanlarında sürekli kendimi geliştiriyorum.</p>
+          </div>
+        </div>
+
+        <div class="edu-card" id="edu-testing">
+          <div class="edu-icon">🧪</div>
+          <div class="edu-content">
+            <h3>Yazılım Testi & Otomasyon</h3>
+            <span class="edu-school">Mesleki Gelişim</span>
+            <span class="edu-year">Devam Ediyor</span>
+            <p class="edu-desc">Software testing ve test otomasyonu alanında yetkinlik kazanmaya devam ediyorum.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="section section-alt" id="contact">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Birlikte Çalışalım</span>
+        <h2 class="section-title">İletişim</h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="contact-grid" id="contact-grid">
+        <div class="contact-info" id="contact-info">
+          <h3 class="contact-subtitle">Merhaba! 👋</h3>
+          <p class="contact-text">Yeni projeler, iş birlikleri veya sadece merhaba demek için bana ulaşabilirsiniz. Her mesajı dikkatle okuyorum.</p>
+          <div class="contact-items" id="contact-items">
+            <a href="mailto:meriguclu123@@gmail.com" class="contact-item" id="contact-email">
+              <div class="contact-item-icon">📧</div>
+              <div>
+                <span class="contact-item-label">E-posta</span>
+                <span class="contact-item-value">meriguclu123@@gmail.com</span>
+              </div>
+            </a>
+            <a href="https://github.com/meryemgcl" target="_blank" class="contact-item" id="contact-github-link">
+              <div class="contact-item-icon">💻</div>
+              <div>
+                <span class="contact-item-label">GitHub</span>
+                <span class="contact-item-value">github.com/meryemgcl</span>
+              </div>
+            </a>
+            <a href="https://www.linkedin.com/in/meryemgüçlü" target="_blank" class="contact-item" id="contact-linkedin-link">
+              <div class="contact-item-icon">🔗</div>
+              <div>
+                <span class="contact-item-label">LinkedIn</span>
+                <span class="contact-item-value">linkedin.com/in/meryemgüçlü</span>
+              </div>
+            </a>
+            <a href="https://medium.com/@@meriguclu" target="_blank" class="contact-item" id="contact-medium-link">
+              <div class="contact-item-icon">✍️</div>
+              <div>
+                <span class="contact-item-label">Medium</span>
+                <span class="contact-item-value">medium.com/@@meriguclu</span>
+              </div>
+            </a>
+          </div>
+        </div>
+        
+        <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"></iframe>
+        <form class="contact-form" id="contact-form" action="https://formsubmit.co/meriguclu123@@gmail.com" method="POST" target="hidden_iframe" onsubmit="handleFormSubmit()">
+          <input type="hidden" name="_captcha" value="false">
+          <div class="form-group" id="form-group-name">
+            <label for="contact-name">Ad Soyad</label>
+            <input type="text" id="contact-name" name="name" placeholder="Adınız Soyadınız" required />
+          </div>
+          <div class="form-group" id="form-group-email">
+            <label for="contact-email-input">E-posta</label>
+            <input type="email" id="contact-email-input" name="email" placeholder="ornek@email.com" required />
+          </div>
+          <div class="form-group" id="form-group-subject">
+            <label for="contact-subject">Konu</label>
+            <input type="text" id="contact-subject" name="subject" placeholder="Mesajınızın konusu" required />
+          </div>
+          <div class="form-group" id="form-group-message">
+            <label for="contact-message">Mesaj</label>
+            <textarea id="contact-message" name="message" placeholder="Mesajınızı buraya yazın..." rows="5" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full" id="btn-send">
+            <span id="btn-send-text">Mesaj Gönder ✉️</span>
+          </button>
+          <div class="form-success" id="form-success" style="display:none;">
+            ✅ Mesajınız gönderildi! En kısa sürede dönüş yapacağım.
+          </div>
+          <div class="form-error" id="form-error" style="display:none;">
+            ❌ Bir hata oluştu. Lütfen tekrar deneyin veya direkt e-posta gönderin.
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+

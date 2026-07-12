@@ -210,32 +210,36 @@ function handleFormSubmit() {
   else btn.textContent = 'Gönderiliyor...';
   
   btn.disabled = true;
-}
-
-// Listen for the iframe load to know when form is submitted
-const hiddenIframe = document.getElementById('hidden_iframe');
-if (hiddenIframe) {
-  hiddenIframe.onload = function() {
-    if (formSubmitted) {
-      const form = document.getElementById('contact-form');
-      const success = document.getElementById('form-success');
-      const btn = document.getElementById('btn-send');
-      const btnText = document.getElementById('btn-send-text');
-
-      success.style.display = 'block';
+  if (!form || !success || !btn) return;
+  
+  const originalText = btnText.innerText;
+  btnText.innerText = "Gönderiliyor...";
+  btn.style.opacity = "0.7";
+  btn.style.pointerEvents = "none";
+  success.style.display = "none";
+  errorMsg.style.display = "none";
+  
+  const formData = new FormData(form);
+  
+  try {
+    const response = await fetch('/Home/SendMessage', {
+      method: 'POST',
+      body: formData
+    });
+    
+    if (response.ok) {
+      success.style.display = "block";
       form.reset();
-      
-      if (btnText) btnText.textContent = 'Mesaj Gönder ✉️';
-      else btn.textContent = 'Mesaj Gönder ✉️';
-      
-      btn.disabled = false;
-      formSubmitted = false;
-
-      setTimeout(() => { 
-        success.style.display = 'none'; 
-      }, 5000);
+    } else {
+      errorMsg.style.display = "block";
     }
-  };
+  } catch (error) {
+    errorMsg.style.display = "block";
+  } finally {
+    btnText.innerText = originalText;
+    btn.style.opacity = "1";
+    btn.style.pointerEvents = "auto";
+  }
 }
 
 // ---- Stats counter animation ----

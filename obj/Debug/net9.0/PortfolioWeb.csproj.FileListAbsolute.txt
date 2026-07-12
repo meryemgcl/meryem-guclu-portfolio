@@ -1,0 +1,10 @@
+C:\Users\HP\Desktop\web sitesi_portfoy\obj\Debug\net9.0\rpswa.dswa.cache.json
+C:\Users\HP\Desktop\web sitesi_portfoy\obj\Debug\net9.0\PortfolioWeb.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\HP\Desktop\web sitesi_portfoy\obj\Debug\net9.0\PortfolioWeb.AssemblyInfoInputs.cache
+C:\Users\HP\Desktop\web sitesi_portfoy\obj\Debug\net9.0\PortfolioWeb.AssemblyInfo.cs
+C:\Users\HP\Desktop\web sitesi_portfoy\obj\Debug\net9.0\PortfolioWeb.csproj.CoreCompileInputs.cache
+C:\Users\HP\Desktop\web sitesi_portfoy\obj\Debug\net9.0\PortfolioWeb.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\HP\Desktop\web sitesi_portfoy\obj\Debug\net9.0\PortfolioWeb.RazorAssemblyInfo.cache
+C:\Users\HP\Desktop\web sitesi_portfoy\obj\Debug\net9.0\PortfolioWeb.RazorAssemblyInfo.cs
+C:\Users\HP\Desktop\web sitesi_portfoy\obj\Debug\net9.0\PortfolioWeb.sourcelink.json
+C:\Users\HP\Desktop\web sitesi_portfoy\obj\Debug\net9.0\PortfolioWeb.csproj.AssemblyReference.cache
