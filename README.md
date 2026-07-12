@@ -1,29 +1,46 @@
 # Meryem Güçlü - Personal Portfolio
 
-Kişisel portföy web sitem. Bu proje, yeteneklerimi, projelerimi, eğitim ve deneyim geçmişimi sergilemek amacıyla HTML, CSS ve JavaScript kullanılarak geliştirilmiştir.
+![Portfolio Mockup](wwwroot/images/portfolio_mockup.png)
+
+Kişisel portföy web sitem. Bu proje, yeteneklerimi, projelerimi, eğitim ve deneyim geçmişimi sergilemek amacıyla **ASP.NET Core MVC** altyapısı ile baştan aşağı yenilenmiş ve **Entity Framework Core** ile güçlendirilmiştir.
+
+## Açıklama
+
+"Deep Ocean" ve "Neon Cyan" konseptleriyle donatılmış, "Matrix" tarzı kod yağmuru animasyonuna sahip karanlık ve modern bir tasarımdır. Statik bir portfolyo yerine, mesajlarınızı doğrudan veritabanına kaydeden dinamik bir iletişim altyapısına sahiptir.
 
 ## Özellikler
 
+- **ASP.NET Core MVC Altyapısı:** Modern, hızlı ve güvenli backend mimarisi.
+- **Entity Framework Core (MSSQL):** İletişim formundan gelen mesajlar doğrudan veritabanına kaydedilir.
+- **Dinamik Proje Filtreleme:** Projeler kategorilerine göre anında filtrelenebilir.
+- **Özel Animasyonlar:** Matrix benzeri "kod yağmuru" arka plan efekti, scroll-reveal animasyonları ve glassmorphism (cam) efekti.
+- **Özelleştirilmiş Renk Paleti:** Derin okyanus mavisi ve neon cyan vurgular.
 - **Responsive Tasarım:** Mobil, tablet ve masaüstü cihazlar için tam uyumlu.
-- **Dinamik Proje Filtreleme:** Projeler kategorilerine göre (Python, Web, Veri & AI, C#) anında filtrelenebilir.
-- **Kişiselleştirilmiş İletişim Formu:** FormSubmit API kullanılarak AJAX tabanlı, sayfayı yenilemeden çalışan iletişim formu.
-- **Özel Animasyonlar:** Matrix benzeri "kod yağmuru" arka plan efekti, scroll-reveal animasyonları ve yazı efekti.
-- **Özelleştirilmiş Renk Paleti:** "Chinese Black", "Dark Jungle Green", "Jet", "Coffee" ve "Antique Brass" renk tonlarıyla hazırlanmış modern ve "premium" hissettiren arayüz.
 
 ## Kullanılan Teknolojiler
 
-- HTML5
-- CSS3 (Custom Properties, Flexbox, Grid, CSS Animations)
-- Vanilla JavaScript (ES6+, Fetch API)
-- FormSubmit API
+- **Backend:** C#, ASP.NET Core MVC (.NET 9)
+- **Veritabanı:** Entity Framework Core, SQL Server (LocalDB)
+- **Frontend:** HTML5, CSS3 (Custom Properties, Flexbox, Grid), Vanilla JavaScript (ES6+, Fetch API)
 
 ## Kurulum ve Çalıştırma
 
-Proje statik dosyalardan oluştuğu için herhangi bir sunucu kurulumu gerektirmez.
-Projeyi bilgisayarınıza indirdikten sonra `index.html` dosyasını tarayıcınızda açarak hemen görüntüleyebilirsiniz.
+Projeyi bilgisayarınıza indirdikten sonra terminal veya komut satırında projenin ana dizinine gidin ve şu komutları çalıştırın:
+
+1. Veritabanını oluşturmak için:
+```bash
+dotnet ef database update
+```
+
+2. Projeyi çalıştırmak için:
+```bash
+dotnet run
+```
+
+Bu işlemlerin ardından ekranda belirtilen `https://localhost:xxxx` adresine giderek siteyi canlı olarak görüntüleyebilirsiniz.
 
 ## İletişim
 
-- GitHub: [@meryemgcl](https://github.com/meryemgcl)
-- LinkedIn: [Meryem Güçlü](https://www.linkedin.com/in/meryemgüçlü)
-- E-posta: meriguclu123@gmail.com
+- **GitHub:** [@meryemgcl](https://github.com/meryemgcl)
+- **LinkedIn:** [Meryem Güçlü](https://www.linkedin.com/in/meryemgüçlü)
+- **E-posta:** meriguclu123@gmail.com
