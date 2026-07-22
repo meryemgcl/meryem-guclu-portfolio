@@ -1,15 +1,15 @@
 # Meryem Güçlü - Personal Portfolio
 
-Kişisel portföy web sitem. Bu proje, yeteneklerimi, projelerimi, eğitim ve deneyim geçmişimi sergilemek amacıyla **ASP.NET Core MVC** altyapısı ile baştan aşağı yenilenmiş ve **Entity Framework Core** ile güçlendirilmiştir.
+Kişisel portföy web sitem. Bu proje, yeteneklerimi, projelerimi, eğitim ve deneyim geçmişimi sergilemek amacıyla **HTML, CSS ve JavaScript** teknolojileri kullanılarak geliştirilmiş, statik, modern ve tamamen duyarlı (responsive) bir tasarıma sahiptir.
 
 ## Açıklama
 
-"Deep Ocean" ve "Neon Cyan" konseptleriyle donatılmış, "Matrix" tarzı kod yağmuru animasyonuna sahip karanlık ve modern bir tasarımdır. Statik bir portfolyo yerine, mesajlarınızı doğrudan veritabanına kaydeden dinamik bir iletişim altyapısına sahiptir.
+"Deep Ocean" ve "Neon Cyan" konseptleriyle donatılmış, "Matrix" tarzı kod yağmuru animasyonuna sahip karanlık ve modern bir tasarımdır. Sitenin iletişim formu, **FormSubmit** kullanılarak doğrudan e-posta adresime güvenli bir şekilde yönlendirilmiştir, bu sayede sunucu maliyeti olmadan tamamen güvenli ve ücretsiz bir altyapı kurulmuştur.
 
 ## Özellikler
 
-- **ASP.NET Core MVC Altyapısı:** Modern, hızlı ve güvenli backend mimarisi.
-- **Entity Framework Core (MSSQL):** İletişim formundan gelen mesajlar doğrudan veritabanına kaydedilir.
+- **Statik Mimari (Serverless):** Veritabanı ve backend gerektirmeyen tamamen güvenli yapı. GitHub Pages üzerinde ücretsiz olarak barındırılır.
+- **FormSubmit Entegrasyonu:** Ziyaretçilerin gönderdiği iletişim formu mesajları doğrudan ve güvenli bir şekilde e-posta adresime düşer.
 - **Dinamik Proje Filtreleme:** Projeler kategorilerine göre anında filtrelenebilir.
 - **Özel Animasyonlar:** Matrix benzeri "kod yağmuru" arka plan efekti, scroll-reveal animasyonları ve glassmorphism (cam) efekti.
 - **Özelleştirilmiş Renk Paleti:** Derin okyanus mavisi ve neon cyan vurgular.
@@ -17,25 +17,14 @@ Kişisel portföy web sitem. Bu proje, yeteneklerimi, projelerimi, eğitim ve de
 
 ## Kullanılan Teknolojiler
 
-- **Backend:** C#, ASP.NET Core MVC (.NET 9)
-- **Veritabanı:** Entity Framework Core, SQL Server (LocalDB)
 - **Frontend:** HTML5, CSS3 (Custom Properties, Flexbox, Grid), Vanilla JavaScript (ES6+, Fetch API)
+- **Deployment:** GitHub Pages
+- **Form Handling:** FormSubmit
 
 ## Kurulum ve Çalıştırma
 
-Projeyi bilgisayarınıza indirdikten sonra terminal veya komut satırında projenin ana dizinine gidin ve şu komutları çalıştırın:
-
-1. Veritabanını oluşturmak için:
-```bash
-dotnet ef database update
-```
-
-2. Projeyi çalıştırmak için:
-```bash
-dotnet run
-```
-
-Bu işlemlerin ardından ekranda belirtilen `https://localhost:xxxx` adresine giderek siteyi canlı olarak görüntüleyebilirsiniz.
+Bu proje tamamen statik dosyalardan oluştuğu için herhangi bir kuruluma veya arka plan sunucusuna ihtiyaç duymaz.
+Projeyi indirdikten sonra sadece `index.html` dosyasına çift tıklayarak tarayıcınızda açıp görüntüleyebilirsiniz.
 
 ## İletişim
 
