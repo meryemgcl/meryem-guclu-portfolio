@@ -9,6 +9,7 @@ Kişisel portföy web sitem. Bu proje, yeteneklerimi, projelerimi, eğitim ve de
 ## Özellikler
 
 - **Statik Mimari (Serverless):** Veritabanı ve backend gerektirmeyen tamamen güvenli yapı. GitHub Pages üzerinde ücretsiz olarak barındırılır.
+- **Otomatik GitHub Entegrasyonu (Yeni):** GitHub API kullanılarak tüm herkese açık (public) depolarınız anında web sitenize çekilir ve kullanılan programlama dillerine göre filtreleme butonları otomatik olarak üretilir. Siteniz her zaman güncel kalır!
 - **FormSubmit Entegrasyonu:** Ziyaretçilerin gönderdiği iletişim formu mesajları doğrudan ve güvenli bir şekilde e-posta adresime düşer.
 - **Dinamik Proje Filtreleme:** Projeler kategorilerine göre anında filtrelenebilir.
 - **Özel Animasyonlar:** Matrix benzeri "kod yağmuru" arka plan efekti, scroll-reveal animasyonları ve glassmorphism (cam) efekti.
