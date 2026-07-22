@@ -1306,3 +1306,7 @@ button { cursor: pointer; border: none; background: none; }
   .section-title { font-size: 1.8rem; }
   .hero-cta { flex-direction: column; align-items: center; }
 }
+
+/* Language Button */
+.lang-btn { background: transparent; border: 1px solid var(--primary-color); color: var(--text-primary); padding: 5px 10px; border-radius: 4px; cursor: pointer; font-family: var(--font-mono); font-weight: 600; transition: var(--transition); }
+.lang-btn:hover { background: rgba(6, 182, 212, 0.1); box-shadow: 0 0 10px rgba(6, 182, 212, 0.3); }

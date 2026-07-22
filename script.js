@@ -402,3 +402,95 @@ async function fetchGitHubProjects() {
     console.error('GitHub API error:', error);
   }
 }
+
+// ---- Language Translations ----
+const translations = {
+  tr: {
+    'nav-about': 'Hakkımda',
+    'nav-skills': 'Yetenekler',
+    'nav-projects': 'Projeler',
+    'nav-experience': 'Deneyim',
+    'nav-education': 'Eğitim',
+    'nav-contact': 'İletişim',
+    'hero-greeting': 'Merhaba, ben',
+    'hero-role': 'Yazılım Geliştirici & Veri Bilimi Tutkunu',
+    'hero-btn-projects': 'Projelerimi Gör',
+    'hero-btn-cv': 'CV İndir',
+    'about-tag': 'Tanışalım',
+    'about-title': 'Hakkımda',
+    'about-subtitle': 'Software Developer & Data Enthusiast',
+    'about-bio': 'Atatürk Üniversitesi Bilgisayar Programcılığı bölümü mezunuyum. Yazılım geliştirme, veri bilimi ve yapay zeka konularına derin ilgi duyuyorum. Web, mobil ve masaüstü uygulamalar geliştirmenin yanı sıra makine öğrenmesi ve otomasyon alanlarında da projeler üretiyorum.',
+    'about-bio-2': 'Kurumsal web uygulamaları geliştirmenin yanı sıra veri analizi, yapay zeka ve otomasyon konularında kendimi sürekli geliştiriyorum. Teknoloji ile insanların hayatını kolaylaştıran çözümler üretmek benim için en büyük motivasyon kaynağı.',
+    'contact-title': 'Benimle İletişime Geçin',
+    'contact-desc': 'Yeni bir proje fikriniz mi var veya sadece merhaba demek mi istiyorsunuz? Formu doldurun, size en kısa sürede dönüş yapacağım.',
+    'btn-send': 'Gönder'
+  },
+  en: {
+    'nav-about': 'About',
+    'nav-skills': 'Skills',
+    'nav-projects': 'Projects',
+    'nav-experience': 'Experience',
+    'nav-education': 'Education',
+    'nav-contact': 'Contact',
+    'hero-greeting': 'Hello, I am',
+    'hero-role': 'Software Developer & Data Science Enthusiast',
+    'hero-btn-projects': 'View My Projects',
+    'hero-btn-cv': 'Download CV',
+    'about-tag': 'Let\'s Meet',
+    'about-title': 'About Me',
+    'about-subtitle': 'Software Developer & Data Enthusiast',
+    'about-bio': 'I am a graduate of Atatürk University Computer Programming. I have a deep interest in software development, data science, and artificial intelligence. In addition to developing web, mobile, and desktop applications, I also produce projects in machine learning and automation.',
+    'about-bio-2': 'I constantly improve myself in data analysis, artificial intelligence, and automation, in addition to developing enterprise web applications. Producing solutions that make people\'s lives easier with technology is my biggest motivation.',
+    'contact-title': 'Get In Touch',
+    'contact-desc': 'Do you have a new project idea or just want to say hi? Fill out the form, and I will get back to you as soon as possible.',
+    'btn-send': 'Send Message'
+  }
+};
+
+let currentLang = localStorage.getItem('siteLang') || 'tr';
+
+function applyLanguage(lang) {
+  const dict = translations[lang];
+  if (!dict) return;
+  
+  for (const [id, text] of Object.entries(dict)) {
+    const el = document.getElementById(id);
+    if (el) {
+      if (el.tagName === 'INPUT' || el.tagName === 'TEXTAREA') {
+        el.placeholder = text;
+      } else {
+        el.textContent = text;
+      }
+    }
+  }
+  
+  document.documentElement.lang = lang;
+  document.getElementById('lang-text').textContent = lang === 'tr' ? 'EN' : 'TR';
+  localStorage.setItem('siteLang', lang);
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+  applyLanguage(currentLang);
+  
+  const langToggle = document.getElementById('lang-toggle');
+  if (langToggle) {
+    langToggle.addEventListener('click', () => {
+      currentLang = currentLang === 'tr' ? 'en' : 'tr';
+      applyLanguage(currentLang);
+    });
+  }
+
+  // Google Analytics Custom Event for CV Download
+  const cvBtn = document.getElementById('btn-cv-hero');
+  if (cvBtn) {
+    cvBtn.addEventListener('click', () => {
+      if (typeof gtag === 'function') {
+        gtag('event', 'download', {
+          'event_category': 'CV',
+          'event_label': 'Meryem_CV',
+          'value': 1
+        });
+      }
+    });
+  }
+});
