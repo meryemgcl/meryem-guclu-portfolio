@@ -1,0 +1,10 @@
+# Meryem Güçlü Portfolio
+
+This site is the personal portfolio of Meryem Güçlü, a Software Developer & Data Enthusiast based in Turkey.
+
+## Links
+- **GitHub**: https://github.com/meryemgcl
+- **LinkedIn**: https://www.linkedin.com/in/meryemgüçlü
+- **Medium**: https://medium.com/@meriguclu
+- **Full Info**: https://meryemgcl.github.io/meryem-guclu-portfolio/llms-full.txt
+- **API**: https://meryemgcl.github.io/meryem-guclu-portfolio/api.json

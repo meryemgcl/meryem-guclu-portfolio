@@ -1,0 +1,18 @@
+{
+  "schema_version": "v1",
+  "name_for_human": "Meryem Güçlü Portfolio",
+  "name_for_model": "meryem_guclu_portfolio",
+  "description_for_human": "Portfolio of Meryem Güçlü, Software Developer.",
+  "description_for_model": "Information about Meryem Güçlü's skills, projects, and experience.",
+  "auth": {
+    "type": "none"
+  },
+  "api": {
+    "type": "openapi",
+    "url": "https://meryemgcl.github.io/meryem-guclu-portfolio/api.json",
+    "is_user_authenticated": false
+  },
+  "logo_url": "https://avatars.githubusercontent.com/u/153759244?v=4",
+  "contact_email": "meriguclu123@gmail.com",
+  "legal_info_url": "https://meryemgcl.github.io/meryem-guclu-portfolio/"
+}

@@ -6,17 +6,53 @@
   <meta name="description" content="Meryem Güçlü — Software Developer & Data Enthusiast. Python, C#, JavaScript, Veri Analizi ve Web Geliştirme projelerim ile tanışın." />
   <meta name="keywords" content="Meryem Güçlü, Software Developer, Data Science, Python, Portfolio, Yazılım Geliştirici" />
   <meta name="author" content="Meryem Güçlü" />
+  <link rel="canonical" href="https://meryemgcl.github.io/meryem-guclu-portfolio/" />
+  <link rel="alternate" hreflang="tr" href="https://meryemgcl.github.io/meryem-guclu-portfolio/" />
+  <link rel="alternate" hreflang="en" href="https://meryemgcl.github.io/meryem-guclu-portfolio/?lang=en" />
+  <link rel="alternate" hreflang="x-default" href="https://meryemgcl.github.io/meryem-guclu-portfolio/" />
   <meta property="og:title" content="Meryem Güçlü | Portfolio" />
   <meta property="og:description" content="Software Developer & Data Enthusiast — Projeler, Yetenekler ve daha fazlası." />
   <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://avatars.githubusercontent.com/u/153759244?v=4" />
   <title>Meryem Güçlü | Portfolio</title>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Meryem Güçlü",
+    "url": "https://meryemgcl.github.io/meryem-guclu-portfolio/",
+    "logo": "https://avatars.githubusercontent.com/u/153759244?v=4",
+    "sameAs": [
+      "https://www.linkedin.com/in/meryemgüçlü",
+      "https://github.com/meryemgcl",
+      "https://medium.com/@meriguclu"
+    ],
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "email": "meriguclu123@gmail.com",
+      "contactType": "customer support"
+    }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [{
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Anasayfa",
+      "item": "https://meryemgcl.github.io/meryem-guclu-portfolio/"
+    }]
+  }
+  </script>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
 
   <!-- Google Analytics (GA4) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-RK0NRMJERC"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
@@ -26,29 +62,32 @@
 </head>
 <body>
 
-  <!-- Navigation -->
-  <nav id="navbar" class="navbar">
-    <div class="nav-container">
-      <a href="#hero" class="nav-logo" id="nav-logo">MG</a>
-      <ul class="nav-links" id="nav-links">
-        <li><a href="#about" id="nav-about">Hakkımda</a></li>
-        <li><a href="#skills" id="nav-skills">Yetenekler</a></li>
-        <li><a href="#projects" id="nav-projects">Projeler</a></li>
-        <li><a href="#experience" id="nav-experience">Deneyim</a></li>
-        <li><a href="#education" id="nav-education">Eğitim</a></li>
-        <li><a href="#contact" id="nav-contact">İletişim</a></li>
-        <li>
-          <button id="lang-toggle" class="lang-btn" aria-label="Toggle Language" title="Türkçe / English">
-            <span id="lang-text">EN</span>
-          </button>
-        </li>
-      </ul>
-      <button class="hamburger" id="hamburger" aria-label="Menüyü aç">
-        <span></span><span></span><span></span>
-      </button>
-    </div>
-  </nav>
+  <!-- Header & Navigation -->
+  <header>
+    <nav id="navbar" class="navbar">
+      <div class="nav-container">
+        <a href="#hero" class="nav-logo" id="nav-logo">MG</a>
+        <ul class="nav-links" id="nav-links">
+          <li><a href="#about" id="nav-about">Hakkımda</a></li>
+          <li><a href="#skills" id="nav-skills">Yetenekler</a></li>
+          <li><a href="#projects" id="nav-projects">Projeler</a></li>
+          <li><a href="#experience" id="nav-experience">Deneyim</a></li>
+          <li><a href="#education" id="nav-education">Eğitim</a></li>
+          <li><a href="#contact" id="nav-contact">İletişim</a></li>
+          <li>
+            <button id="lang-toggle" class="lang-btn" aria-label="Toggle Language" title="Türkçe / English">
+              <span id="lang-text">EN</span>
+            </button>
+          </li>
+        </ul>
+        <button class="hamburger" id="hamburger" aria-label="Menüyü aç">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+  </header>
 
+  <main>
   <!-- Hero Section -->
   <section class="hero" id="hero">
     <!-- Animated code rain canvas -->
@@ -592,6 +631,51 @@
     </div>
   </section>
 
+  <!-- FAQ Section -->
+  <section class="section" id="faq" style="background-color: var(--obsidian); border-top: 1px solid var(--charcoal);">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Sıkça Sorulan Sorular</span>
+        <h2 class="section-title">SSS & Karşılaştırma</h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="faq-list" style="max-width: 800px; margin: 0 auto; text-align: left;">
+        <div class="faq-item" style="margin-bottom: 1.5rem;">
+          <h3 style="color: var(--parchment); margin-bottom: 0.5rem;">Hangi roldeki projeler için uygunsunuz?</h3>
+          <p style="color: var(--mist);">Web geliştirme (Full-stack, ASP.NET Core, Python), Veri Analizi ve Makine Öğrenmesi projelerinde görev alıyorum. Salt mobil geliştirme (örn. Swift/Kotlin) veya sistem yöneticiliği için uygun değilim.</p>
+        </div>
+        <div class="faq-item" style="margin-bottom: 1.5rem;">
+          <h3 style="color: var(--parchment); margin-bottom: 0.5rem;">Hangi teknolojilerle çalışıyorsunuz?</h3>
+          <p style="color: var(--mist);">Ağırlıklı olarak Python (Pandas, Scikit-learn), C# (ASP.NET Core), ve JavaScript ile çalışıyorum.</p>
+        </div>
+      </div>
+    </div>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Hangi roldeki projeler için uygunsunuz?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Web geliştirme (Full-stack, ASP.NET Core, Python), Veri Analizi ve Makine Öğrenmesi projelerinde görev alıyorum. Salt mobil geliştirme (örn. Swift/Kotlin) veya sistem yöneticiliği için uygun değilim."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Hangi teknolojilerle çalışıyorsunuz?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Ağırlıklı olarak Python (Pandas, Scikit-learn), C# (ASP.NET Core), ve JavaScript ile çalışıyorum."
+          }
+        }
+      ]
+    }
+    </script>
+  </section>
+
   <!-- Contact Section -->
   <section class="section section-alt" id="contact">
     <div class="container">
@@ -669,6 +753,7 @@
     </div>
   </section>
 
+  </main>
   <!-- Footer -->
   <footer class="footer" id="footer">
     <div class="footer-container">

@@ -1,0 +1,26 @@
+{
+  "openapi": "3.1.0",
+  "info": {
+    "title": "Meryem Güçlü Portfolio API",
+    "description": "Read-only API for accessing Meryem Güçlü's portfolio data, projects, and skills.",
+    "version": "1.0.0"
+  },
+  "servers": [
+    {
+      "url": "https://meryemgcl.github.io/meryem-guclu-portfolio"
+    }
+  ],
+  "paths": {
+    "/": {
+      "get": {
+        "summary": "Get Portfolio Details",
+        "description": "Returns the main HTML document containing structured JSON-LD data about the portfolio.",
+        "responses": {
+          "200": {
+            "description": "Successful response"
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,16 @@
+# Meryem Güçlü Portfolio - Full Profile
+
+This is the comprehensive profile of Meryem Güçlü.
+
+## About
+Meryem is a Software Developer & Data Enthusiast interested in Data Science, AI, and Software Development. She builds web, mobile, and desktop applications as well as machine learning and automation projects.
+
+## Skills
+- **Programming Languages**: Python, JavaScript, C#, HTML, CSS, PHP
+- **Data & AI**: Pandas, NumPy, Scikit-learn, Jupyter Notebook, OpenCV, Matplotlib
+- **Web & Frameworks**: ASP.NET Core MVC, TailwindCSS, REST API, Flask, Arduino
+- **Databases & ORM**: MSSQL, Entity Framework Core, SQL, LINQ
+- **Tools**: Git, GitHub, VS Code, Software Testing, Agile, Visual Studio
+
+## Contact
+Email: meriguclu123@gmail.com
